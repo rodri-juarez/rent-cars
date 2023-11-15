@@ -4,7 +4,7 @@ import {Footer, NavBar} from '@/components'
 
 
 export const metadata: Metadata = {
-  title: 'Baires Rent Cars',
+  title: 'Car Hub',
   description: 'Discover the best cars in the world.',
 }
 

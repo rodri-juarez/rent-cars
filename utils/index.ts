@@ -51,7 +51,6 @@ export const deleteSearchParams = (type: string) => {
 
 export async function fetchCars(filters: FilterProps) {
   const {manufacturer, year, model, limit, fuel} = filters;
-  console.log('EN FETCH');
 
   const headers: HeadersInit = {
     "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY || "",
@@ -67,7 +66,6 @@ export async function fetchCars(filters: FilterProps) {
   );
 
   const result = await response.json();
-  console.log(result)
 
   return result;
 }
