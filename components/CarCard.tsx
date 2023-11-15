@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import CustomButton from "./CustomButton";
+import CarDetails from "./CarDetails";
 
 export interface CarProps {
   city_mpg: number;
@@ -78,6 +79,7 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
+      <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
     </div>
   );
 };
